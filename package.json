@@ -1,0 +1,19 @@
+{
+  "name": "testing_library",
+  "version": "1.0.0",
+  "description": "Demo testing for a library site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [
+    "test",
+    "library",
+    "cypress"
+  ],
+  "author": "Andrea Barrera",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^13.4.0"
+  }
+}
