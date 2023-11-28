@@ -19,4 +19,25 @@ describe("Testing site for banrep library", () => {
   it("Must have a navigation bar", () => {
     cy.get("#site-navigation > .inside-navigation").should("be.visible");
   });
+  it("Must have Inicio option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("INICIO");
+  });
+  it("Must have Nosotros option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("NOSOTROS");
+  });
+  it("Must have Formaciones option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("FORMACIONES");
+  });
+  it("Must have Blog option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("BLOG");
+  });
+  it("Must have Contacto option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("CONTACTO");
+  });
+  it("Must have Whatsapp option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("WHATSAPP");
+  });
+  it("Must have Campus virtual option on the navigation bar", () => {
+    cy.get("#site-navigation > .inside-navigation").contains("CAMPUS VIRTUAL");
+  });
 });
