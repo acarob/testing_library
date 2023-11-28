@@ -1,4 +1,4 @@
-describe("Testing site for banrep library", () => {
+describe("Testing site for navigation bar", () => {
   beforeEach(() => {
     cy.visit("https://www.pnliafi.com.ar");
   });
@@ -39,5 +39,25 @@ describe("Testing site for banrep library", () => {
   });
   it("Must have Campus virtual option on the navigation bar", () => {
     cy.get("#site-navigation > .inside-navigation").contains("CAMPUS VIRTUAL");
+  });
+});
+
+describe("Testing for the site appearance", () => {
+  beforeEach(() => {
+    cy.visit("https://www.pnliafi.com.ar");
+  });
+  it("Must have a heading", () => {
+    cy.get(".gb-headline-71b48fa0").should("be.visible");
+  });
+  it("The title must match the data", () => {
+    cy.get(".gb-headline-722f5f7b > strong").contains(
+      "Instituto Americano de Formación e Investigación"
+    );
+  });
+  it("The message must match", () => {
+    cy.get(".gb-headline-07701ebb").contains("Seamos el CAMBIO");
+  });
+  it("The message must match", () => {
+    cy.get(".gb-headline-0d937ab8").contains("que queremos ver en el MUNDO");
   });
 });
