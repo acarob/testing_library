@@ -60,7 +60,7 @@ describe("Testing for the site appearance", () => {
   it("The message must match", () => {
     cy.get(".gb-headline-0d937ab8").contains("que queremos ver en el MUNDO");
   });
-  it("Must have two buttons", () => {
+  it("Must have one buttons", () => {
     cy.get(".gb-button-689ad621").should("be.visible");
     cy.get(".gb-button-95066cf9").should("be.visible");
   });
