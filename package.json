@@ -13,7 +13,7 @@
   ],
   "author": "Andrea Barrera",
   "license": "MIT",
-  "dependencies": {
-    "cypress": "^13.4.0"
+  "devDependencies": {
+    "cypress": "^13.6.4"
   }
 }
